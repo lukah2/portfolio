@@ -1,0 +1,513 @@
+/* FONT  */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*---------------- GENERAL RULES  */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*----------- VARIABLES  */
+:root {
+    --C-PastelBlue: rgba(181, 199, 204);
+    --C-CadetGrey: rgb(179, 207, 223);
+    --C-SteelTeal: rgba(88, 123, 137);
+    --C-PoliceBlue: rgba(36, 76, 102);
+    --C-DeepAquamarine: rgba(64, 125, 108);
+    --C-DarkSeaGreen: rgba(125, 178, 144);
+    --C-White: white;
+    --C-Gray: rgb(235, 232, 232);
+    --C-Black: black;
+
+    --C-CadetGreyLight: rgb(202, 231, 248);
+    --C-PoliceBlueAlpha: rgba(36, 76, 102, 0.842);
+}
+
+/*---------------- HEADER RULES  */
+header {
+    padding: 1rem;
+    color: var(--C-White);
+    background-color: var(--C-PoliceBlue);
+}
+
+header .headerContain {
+    width: 1200px;
+    min-height: 100px;
+
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    vertical-align: middle;
+}
+
+header h1 img {
+    width: 60px;
+}
+
+header .headerContain nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1rem;
+    font-size: 1.2rem;
+}
+
+header .headerContain nav a {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/*---------------- MAIN RULES  */
+main {
+    min-height: 100vh;
+    background-color: var(--C-CadetGrey);
+}
+
+/*---------------- HOME */
+.homeContain {
+    width: 1200px;
+    padding: 4rem 1rem;
+    margin: auto;
+}
+
+.homeContain .rutaContain {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+
+    border-radius: .5rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: var(--C-PoliceBlue);
+}
+
+.homeContain h2 {
+    margin-bottom: 1rem;
+    font-size: 3.2rem;
+}
+
+.homeContain h3 {
+    margin: 1rem 0px 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.homeContain h4 {
+    font-size: 1.5rem;
+}
+
+.homeContain p {
+    padding: .5rem 0px;
+    font-size: 1.2rem;
+}
+
+/*---------------- USERS ALL */
+
+.usersContain {
+    width: 1200px;
+    padding: 6rem 1rem;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 33px;
+
+}
+
+.userContain {
+    width: 500px;
+
+    padding: 2rem 1rem;
+    margin-bottom: 33px;
+    text-align: center;
+
+    border-radius: .5rem;
+
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    background-color: var(--C-PoliceBlue);
+}
+
+.userContain h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+
+    color: var(--C-White);
+}
+
+.userContain h3 {
+    margin: 1rem 0px;
+    font-size: 1.5rem;
+    font-weight: 300;
+
+    color: var(--C-White);
+}
+
+.userContain span {
+    color: var(--C-PastelBlue);
+    font-weight: 900;
+}
+
+.userContain a {
+    font-size: 1.4rem;
+    font-weight: 900;
+
+    color: var(--C-White);
+}
+
+.userContain a:hover {
+    cursor: pointer;
+}
+
+/*---------------- USERS / VIEWUSER */
+.viewUserContain {
+    width: 1200px;
+    padding: 6rem 1rem;
+    margin: auto;
+
+    /* background-color: red; */
+}
+
+.viewUser {
+    width: 900px;
+    margin: auto;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    border-radius: .8rem;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, .75);
+
+    background-color: var(--C-PoliceBlue);
+}
+
+.viewUser h2 {
+    margin: auto;
+}
+
+/*---------------- VIEW USER CONTENT  */
+
+.viewUser .personalInfo,
+.viewUser .addressInfo {
+    width: 400px;
+    min-height:320px ;
+    padding: 1rem 0px;
+    /* background-color: gray; */
+}
+
+.viewUser h2 {
+    width: 100%;
+    padding: 1rem 0px;
+    text-align: center;
+    font-size: 2.5rem;
+
+    color: var(--C-White);
+}
+
+.viewUser h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--C-CadetGrey);
+}
+
+.viewUser .personalInfo span,
+.viewUser .addressInfo span {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.viewUser .personalInfo span,
+.viewUser .addressInfo span,
+.viewUser h2 span {
+    color: var(--C-CadetGrey);
+
+}
+
+.viewUser .personalInfo p,
+.viewUser .addressInfo p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--C-White);
+}
+
+.viewUser .actionBtn {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: green; */
+}
+
+.actionBtn a,
+.actionBtn button {
+    padding: .5rem .8rem;
+
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    border-radius: .3rem;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+    background-color: var(--C-CadetGrey);
+}
+
+.actionBtn a:hover,
+.actionBtn button:hover {
+    background-color: var(--C-CadetGreyLight);
+
+}
+
+/*---------------- POSTS USERS  */
+
+.postsContain {
+    width: 1200px;
+    padding: 6rem 1rem;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+
+    /* background-color: blueviolet; */
+}
+
+.postsContain .tituloPostsContain {
+    width: 70%;
+}
+
+.postsContain #tituloPosts {
+    font-size: 3rem;
+    /* background-color:aqua ; */
+}
+
+.postContain {
+    width: 70%;
+    padding: 2rem;
+
+    border-radius: .5rem;
+
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, .75);
+    background-color: var(--C-PoliceBlue) ;
+}
+
+.postContain h2 {
+    font-size: 2.2rem;
+    color: var(--C-CadetGrey);
+}
+
+.postContain h3 {
+    margin: .5rem 0px;
+    font-size: 1.5rem;
+    color: var(--C-CadetGrey);
+
+
+}
+
+.postContain p {
+    font-size: 1.1rem;
+    color: var(--C-White);
+    /* background-color: green; */
+}
+
+/*---------------- FORM CREATE USER  */
+.createUserContain {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: var(--C-PoliceBlueAlpha);
+}
+
+.closeBtn {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 10px;
+    right: 16px;
+
+    font-size: 1.2rem;
+    border-radius: 1rem;
+
+    color: var(--C-PoliceBlue);
+    cursor: pointer;
+}
+
+.createUserContain form {
+    min-width: 600px;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    position: relative;
+
+    border-radius: 2rem;
+    box-shadow: 0 0 12px 0px rgba(0, 0, 0, 1);
+    background-color: var(--C-SteelTeal);
+}
+
+.createUserContain form fieldset {
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1.2rem;
+    border: 1px solid black;
+}
+
+.createUserContain form fieldset legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    color: var(--C-White);
+}
+
+.createUserContain form fieldset .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.createUserContain form fieldset .field label {
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    color: var(--C-CadetGreyLight);
+
+}
+
+.createUserContain form fieldset .field :is(input, textarea, select, button) {
+    padding: .5rem .5rem;
+
+    font-size: .9rem;
+
+    border: none;
+    border-radius: .25rem;
+    outline: none;
+    box-shadow: 0 0 6px 0px rgba(0, 0, 0, .5);
+
+    background-color: var(--C-White);
+}
+
+.createUserContain form button[type='submit'] {
+
+    padding: 0.8rem;
+
+    font-size: .9rem;
+    font-weight: 600;
+
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    box-shadow: 0 0 6px 0px rgba(0, 0, 0, .5);
+
+    color: var(--C-PoliceBlue);
+    background-color: var(--C-Gray);
+
+    cursor: pointer;
+}
+
+.createUserContain form button[type='submit']:hover {
+    background-color: var(--C-White);
+}
+
+/* ALERT USUARIO GUARDADO */
+
+.userCreated {
+    width: 400px;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    position: fixed;
+    top: 100px;
+    left: 47%;
+    transform: translateX(-200px);
+
+    font-size: 1.1rem;
+
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .5);
+    border-radius: .5rem;
+    background-color: var(--C-White);
+}
+
+.userCreated h2 {
+    color: var(--C-PoliceBlue);
+}
+
+.userCreated button {
+    width: 125px;
+    margin: auto;
+
+    padding: 1rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    border: none;
+    border-radius: .5rem;
+
+    box-shadow: 0 0 6px 0px rgba(0, 0, 0, .5);
+
+    color: var(--C-PoliceBlue);
+    background-color: var(--C-Gray);
+}
+
+.userCreated button:hover {
+    background-color: var(--C-White);
+
+}
+
+.errorContain {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.notFound {
+    width: 100%;
+    height: 100%;
+}

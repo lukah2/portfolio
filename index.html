@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Index</title>
+
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- LIBRERIA AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- ESTILOS CSS  -->
+    <link rel="stylesheet" href="/Css/styles.css">
+</head>
+
+<body>
+
+    <!-- INICIO  -->
+    <section id="inicio" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true">
+        <header>
+            <div class="headerContain">
+                <h1>LGE</h1>
+
+                <nav id="nav" >
+                    <a href="#inicio">Inicio</a>
+                    <a href="#sobreMi">Sobre mi</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#fortalezas">Fortalezas</a>
+                    <a href="#portfolio">Portfolio</a>
+                </nav>
+
+                <div id="iconoResponsiveMenu"class="menu oculto">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+            </div>
+        </header>
+
+        <article class="presentacion">
+
+            <p class="bienvenida">Bienvenidos</p>
+
+            <h2>Soy <span>Lucas Gresia</span>, Desarrollador Web</h2>
+
+            <p class="descripcion"> Hola que tal, este es mi pequeño lugar en el mundo. En este sitio podrán encontrar una breve introducción de quien soy, cosas que me gustan y proyecciones a futuro. Además verán información sobre las tecnologías en las cuales me especialicé y me sigo especializando, junto a un conjunto de proyectos en los cuales plasmo mis conocimiento. Muchas gracias por ver y por su tiempo.
+            </p>
+
+            <a href="#portfolio">Ir a Portfolio</a>
+
+        </article>
+
+
+    </section>
+
+    <!-- SOBRE MI  -->
+    <section id="sobreMi">
+
+        <div class="sobreMiContenedor">
+
+            <div class="fotoContain" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+                <img src="/images/sobreMi.jpg" alt="">
+            </div>
+
+            <article class="sobreMi" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+                <p class="tituloSobreMi">Sobre Mi</p>
+                <h2>Hola, soy <span>Lucas Gresia</span></h2>
+                <h3>Desarrollador Web</h3>
+                <p>
+                    Hola que tal, mi nombre es Lucas, soy un joven programador enfocado en el desarrollo web Front-End.</p>
+                <p>
+                    Me gusta ir aprendiendo constamente sobre todo en las ramas de la        tecnología y de la psicología. 
+                </p>
+                <p>
+                    Algunos de mis objetivos a futuro son expandir mis conocimientos en React y aprender inglés.
+                </p>
+                <p>
+                    Mis tiempos libres los uso para entrenar, escuchar música y hacer freestyle.
+                </p>
+
+                <a href="/documentos/cv.pdf" download="">Descargar CV</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- SERVICIOS  -->
+    <section id="servicios">
+        <h3 class="tituloServicios" data-aos="flip-left" data-aos-duration="2000" data-aos-once="true">Mis Servicios</h3>
+
+        <div class="fila">
+            <article class="servicio html" >
+                <img src="/images/html.png" alt="" data-aos="flip-left" data-aos-duration="2000" data-aos-once="true">
+
+                <h3 class="tituloServicio">HTML 5</h3>
+
+            </article>
+
+            <article class="servicio css" >
+                <img src="/images/css3.png" alt="" data-aos="flip-up" data-aos-duration="2000" data-aos-once="true">
+
+                <h3 class="tituloServicio">CSS 3</h3>
+
+            </article>
+
+            <article class="servicio js"  >
+                <img src="/images/js.png" alt="" data-aos="flip-right" data-aos-duration="2000" data-aos-once="true">
+
+                <h3 class="tituloServicio">JS</h3>
+
+            </article>
+        </div>
+    </section>
+
+        <!-- FORTALEZAS -->
+    <section id="fortalezas">
+
+        <article class="fortaleza">
+
+            <h2 class="tituloFortaleza" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <i class="fa-solid fa-dumbbell" style="color: #000000;"></i>
+                Fortalezas Principales
+            </h2>
+
+            <p class="contenedorFortalezas">
+
+                <span class="fortalezas parrafos"  data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">Adaptabilidad</span>
+
+                <span class="fortalezas parrafos"  data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Responsabilidad</span>
+
+                <span class="fortalezas parrafos"  data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Organización</span>
+
+                <span class="fortalezas parrafos"  data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">Comunicación</span>
+            </p>
+        </article>
+
+    </section>
+
+        <!-- PORTFOLIO  -->
+    <section id="portfolio">   
+        <div class="portfolioContenedor"> 
+        <h3 class="tituloPortfolio" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Mis proyectos</h3>
+
+        <div class="fila">
+            <article class="proyecto" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+
+                <div class="overlay"></div>
+                <img src="images/calculadora.png" alt="">
+                <div class="info">
+                    <h4><a href="/Proyectos/Calculadora/index.html" target="_blank" title="calculadora.com">Calculadora</a></h4>
+                    <p>Dispositivo de cálculos aritméticos.</p>
+                </div>
+
+            </article>
+
+            <article class="proyecto" data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
+                <div class="overlay"></div>
+                <img src="images/listaTareas.png" alt="">
+                <div class="info">
+                    <h4><a href="/Proyectos/ListaDeTareas/index.html" target="_blank" title="ListaDeTareas.com">Lista de tareas</a></h4>
+                    <p>Herramienta de apuntes.</p>
+                </div>
+
+            </article>
+
+            <article class="proyecto" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+                <div class="overlay"></div>
+                <img src="images/pokedex.png" alt="">
+                <div class="info">
+                    <h4><a href="/Proyectos/Pokedex/index.html" target="_blank" title="Pokedex.com">Pokedex</a></h4>
+                    <p>Simulación de API ficticia.</p>
+                </div>
+
+            </article>
+        </div>
+
+        <div class="fila">
+            <article class="proyecto" data-aos="zoom-in"data-aos-duration="2000" data-aos-once="true">
+                <div class="overlay"></div>
+                <img src="images/e-commerce.png" alt="">
+                <div class="info">
+
+                    <h4><a href="/Proyectos/E-commerce/index.html" target="_blank" title="E-commerce.com">E-commerce</a></h4>
+                    <p>Venta de juegos.</p>
+                </div>
+
+            </article>
+
+            <article class="proyecto" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
+                <div class="overlay"></div>
+                <img src="images/jsonPlace.png" alt="">
+                <div class="info">
+                    <h4><a href="/Proyectos/SPA-Placeholder/index.html" target="_blank" title="SPA-Placeholder.com">SPA - JsonPlace</a></h4>
+                    <p>Una SPA de API ficticia.</p>
+                </div>
+
+            </article>
+
+            <article class="proyecto" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
+                <div class="overlay"></div>
+                <img src="images/proximamente.png" alt="">
+                <div class="info">
+                    <h4>Proximamente...</h4>
+                    <p>En desarrollo.</p>
+                </div>
+
+            </article>
+        </div>
+
+        </div> 
+    </section>
+
+        <!-- FOOTER -->
+    <footer >
+        <div class="footerContenedor">
+            <p>
+                Derechos reservados Lucas Gresia <i class="fa-regular fa-copyright"></i> 2023
+            </p>
+            
+            <a href="https://www.linkedin.com/in/lucas-gresia-972337183/" target="_blank" class="linkLinkedin"><i class="fa-brands fa-linkedin-in" ></i></a>
+
+        </div>
+    </footer>
+
+    <script> AOS.init(); </script>
+    <script src="/Js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* GENERAL RULES  */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+   font-family: 'Roboto', sans-serif;
+}
+
+a {
+   text-decoration: none;
+}
+
+/* VARIABLES  */
+:root {
+   --tipo-normal: rgb(171, 171, 120);
+   --tipo-fuego: rgb(240, 128, 48);
+   --tipo-agua: rgb(104, 144, 240);
+   --tipo-hierba: rgb(120, 200, 80);
+   --tipo-electrico: rgb(248, 208, 48);
+   --tipo-hielo: rgb(152, 216, 216);
+   --tipo-luchador: rgb(192, 48, 40);
+   --tipo-venenoso: rgb(160, 64, 160);
+   --tipo-tierra: rgb(224, 192, 104);
+   --tipo-volador: rgb(168, 144, 240);
+   --tipo-psiquico: rgb(248, 88, 136);
+   --tipo-bug: rgb(168, 136, 32);
+   --tipo-roca: rgb(136, 160, 56);
+   --tipo-fantasma: rgb(112, 88, 152);
+   --tipo-oscuridad: rgb(112, 88, 72);
+   --tipo-dragon: rgb(112, 56, 248);
+   --tipo-acero: rgb(136, 136, 208);
+   --tipo-magico: rgb(240, 181, 187);
+
+   --C-White: white;
+   --C-Gray: rgb(236, 236, 236);
+   --C-Black: black;
+   --C-LigthBlue: rgba(169, 226, 255, 0.808);
+   --C-redLight: rgba(175, 13, 13, 0.473);
+}
+
+/* HEADER RULES  */
+header {
+   padding-block: 2.5rem;
+
+   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+   background-color: var(--C-redLight);
+}
+
+.nav {
+   width: 1400px;
+   margin: auto;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navList {
+   width: 650px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 1rem;
+
+   line-height: 2rem;
+}
+
+.btnHeader {
+   padding: .5rem 1rem;
+
+   font-weight: 600;
+
+   border-radius: 100vmax;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+
+   color: var(--C-White);
+   background-color: var(--C-Black);
+}
+
+.btnHeader:hover {
+   cursor: pointer;
+
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+.navItem:hover {
+   transform: scale(1.1);
+   transition: 0.4s;
+}
+
+/* MAIN RULES  */
+main {
+   min-height: 100vh;
+   padding: 2rem;
+
+   background-color: var(--C-LigthBlue);
+}
+
+.todosPokemones {
+   padding: 2rem;
+}
+
+.listaPokemones {
+   width: 1400px;
+   margin: 0px auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 50px;
+}
+
+.pokemon {
+   min-height: 430px;
+
+   position: relative;
+   isolation: isolate;
+
+   border-radius: 10px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+
+   background-color: var(--C-White);
+}
+
+.pokemonIdBack {
+   position: absolute;
+   top: 0.6rem;
+   right: 1rem;
+   z-index: -1;
+
+   font-size: 2rem;
+   font-weight: 800;
+
+   color: var(--C-Gray);
+}
+
+.pokemonImg {
+   max-width: 16rem;
+}
+
+.pokemonImg img {
+   width: 100%;
+   padding: 2rem;
+}
+
+.pokemonInfo {
+   padding: 1rem;
+}
+
+.pokeStats {
+   margin-bottom: 1rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.pokemonId {
+   font-size: 1.2rem;
+}
+
+.nombrePokemon {
+   font-size: 1.5rem;
+   font-weight: 600;
+}
+
+.peso,
+.altura {
+   font-size: 1.1rem;
+   font-weight: 300;
+}
+
+.tipo {
+   width: 100%;
+   padding: 0.4rem;
+
+   text-align: center;
+   font-size: 1.1rem;
+   font-weight: 500;
+
+   border-radius: 2px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+ul {
+   list-style: none;
+}
+
+.normal {
+   background-color: var(--tipo-normal);
+}
+
+.fire {
+   background-color: var(--tipo-fuego);
+}
+
+.water {
+   background-color: var(--tipo-agua);
+}
+
+.grass {
+   background-color: var(--tipo-hierba);
+}
+
+.electric {
+   background-color: var(--tipo-electrico);
+}
+
+.ice {
+   background-color: var(--tipo-hielo);
+}
+
+.fighting {
+   background-color: var(--tipo-luchador);
+}
+
+.poison {
+   background-color: var(--tipo-venenoso);
+}
+
+.ground {
+   background-color: var(--tipo-tierra);
+}
+
+.flying {
+   background-color: var(--tipo-volador)
+}
+
+.psychic {
+   background-color: var(--tipo-psiquico);
+}
+
+.bug {
+   background-color: var(--tipo-bug);
+}
+
+.rock {
+   background-color: var(--tipo-roca);
+}
+
+.ghost {
+   background-color: var(--tipo-fantasma);
+}
+
+.dark {
+   background-color: var(--tipo-oscuridad);
+}
+
+.dragon {
+   background-color: var(--tipo-dragon);
+}
+
+.steel {
+   background-color: var(--tipo-acero);
+}
+
+.fairy {
+   background-color: var(--tipo-magico);
+}

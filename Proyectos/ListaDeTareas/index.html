@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="shortcut icon" href="images/list.png" type="image/x-icon">
+</head>
+<body>
+
+<main>
+
+    <section id="listContain">
+
+        <h1>Lista de tareas</h1>
+
+        <article class="buscador">
+            <form >
+                <div class="inputContain">
+                    <input id='newTask' type="text" placeholder="Agregar tarea..." required>
+                    <button class="addBtn" type="submit">+</button>
+                </div>
+                <span class="msgError">Debes asignar una tarea para guardar.</span>
+            </form>
+
+            <article class="errorContain">
+
+            </article>
+
+            <article class="tasksContain">
+                <ul class="taskList">
+   
+                </ul>
+            </article>
+
+            <article class="msgTask">
+                <p>No tienes tareas pendientes</p>
+            </article>
+
+        </article>
+    </section>
+</main>
+
+<script src="Js/main.js"></script>
+</body>
+</html>

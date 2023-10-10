@@ -1,0 +1,660 @@
+/*--------- Fuentes -------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*--------- Reglas Generales -------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--C-Blanco);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--------- Variables -------------*/
+
+:root {
+    --C-Rosa: #ff5080;
+    --C-Blanco: white;
+    --C-GrisClaro: #f3f3f3;
+    --C-GrisOscuro: #565656;
+    --C-Negro: #000;
+
+    /* #ff5080 */
+}
+/*--------- Reglas Header -------------*/
+
+/*--------- Sección 1 Inicio -------------*/
+/*--------------------------------*/
+#inicio {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, .8);
+
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('/images/bg-header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+header {
+    width: 100%;
+
+    position: fixed;
+    isolation: isolate;
+    top: 0;
+
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+header .headerContain {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.oculto {
+    display: none;
+}
+
+header .headerContain h1 {
+    text-align: center;
+    color: var(--C-Rosa);
+}
+
+header .headerContain nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+header .headerContain a,
+header .menu {
+    color: var(--C-Blanco);
+}
+
+header .headerContain a:hover {
+    color: var(--C-Rosa);
+}
+
+#inicio .presentacion {
+    max-width: 1100px;
+    min-height: 800px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--C-Blanco);
+}
+
+#inicio .presentacion .bienvenida {
+    margin-bottom: 1.2rem;
+
+    font-size: 1.4rem;
+
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+
+#inicio .presentacion h2 {
+    margin-bottom: 1.5rem;
+
+    font-size: 3rem;
+    text-align: center;
+}
+
+#inicio .presentacion h2 span {
+    font-size: 1.5rem;
+    color: var(--C-Rosa);
+}
+
+#inicio .presentacion .descripcion {
+    max-width: 700px;
+    padding: 1rem;
+    margin: 1.5rem auto;
+
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.7rem;
+}
+
+#inicio .presentacion a {
+    padding: 1.2rem 1.5rem;
+    margin: 1.2rem 1.5rem;
+
+    display: inline-block;
+
+    border: 2px solid var(--C-Blanco);
+    border-radius: 3rem;
+
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: .5s;
+
+    color: var(--C-Blanco);
+}
+
+#inicio .presentacion a:hover {
+    background-color: var(--C-Rosa);
+}
+
+/*--------- Sección 2 Sobre mi -------------*/
+/*--------------------------------*/
+
+#sobreMi .sobreMiContenedor {
+    max-width: 1100px;
+    height: 100vh;
+
+    margin: auto;
+    padding: 6rem;
+
+    display: flex;
+}
+
+#sobreMi .fotoContain {
+    max-width: 400px;
+    margin-right: 5rem;
+}
+
+#sobreMi .fotoContain img {
+    width: 100%;
+    padding: 1.5rem;
+
+    border-radius: 1.1rem;
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, .7);
+
+    background-color: var(--C-GrisClaro);
+}
+
+#sobreMi .sobreMi {
+    margin: 0 2rem;
+}
+
+#sobreMi .sobreMi .tituloSobreMi {
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: rgba(128, 128, 128, 0.247);
+    text-decoration-color: var(--C-Rosa);
+
+    text-decoration-thickness: .3rem;
+
+    color: var(--C-Negro);
+}
+
+#sobreMi .sobreMi h2 {
+    margin: 1.2rem 0;
+
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+#sobreMi .sobreMi h2 span {
+    color: var(--C-Rosa);
+}
+
+#sobreMi .sobreMi h3 {
+    margin-bottom: 1.2rem;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+#sobreMi .sobreMi p {
+    margin-bottom: 1rem;
+
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+
+    color: var(--C-GrisOscuro);
+}
+
+#sobreMi .sobreMi a {
+    margin-top: 2rem;
+    padding: .5rem 1.5rem;
+
+    display: inline-block;
+
+    font-size: 1.2rem;
+    text-decoration: none;
+
+    border: 2px solid var(--C-Rosa);
+    border-radius: 3rem;
+
+    transition: .5s;
+    color: var(--C-Rosa);
+}
+
+#sobreMi .sobreMi a:hover {
+    color: var(--C-Blanco);
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, .7);
+
+    background-color: var(--C-Rosa);
+}
+
+/*--------- Sección 3 Servicios -------------*/
+/*--------------------------------*/
+#servicios {
+    padding: 4rem 1rem;
+
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, .8);
+
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('/images/fondoSobreMi.jpg');
+    background-size: cover;
+    background-position: center;
+
+    background-color: var(--C-GrisClaro);
+}
+
+#servicios .tituloServicios {
+    width: 400px;
+    margin: 0 auto;
+
+    font-size: 2rem;
+    font-weight: 400;
+
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: .3rem;
+
+    color: var(--C-Rosa);
+}
+
+#servicios .fila {
+    max-width: 1100px;
+    margin: 2rem auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#servicios .fila .servicio {
+    max-width: 300px;
+    padding: 2rem 1rem;
+    margin: 3rem auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1rem;
+    transition: .5s;
+
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, .7);
+
+    background-color: var(--C-Blanco);
+}
+
+#servicios .fila .servicio:hover {
+    box-shadow: 0 0 8px 4px rgba(248, 248, 248, 0.7);
+}
+
+#servicios .fila .servicio img {
+    max-width: 50%;
+}
+
+#servicios .fila .servicio h3 {
+    margin: 2rem auto 0;
+
+    font-size: 1.3rem;
+}
+
+/*--------- Sección 4 Fortalezas -------------*/
+/*--------------------------------*/
+
+#fortalezas {
+    min-height: 600px;
+    padding: 6rem 1rem 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, .8);
+}
+
+#fortalezas .fortaleza {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+#fortalezas .tituloFortaleza {
+    padding: 2rem 1rem;
+
+    font-size: 3rem;
+    font-weight: 400;
+
+    text-align: center;
+}
+
+#fortalezas .contenedorFortalezas {
+    margin: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#fortalezas .fortalezas {
+    padding: 1.2rem 1.5rem;
+    margin: 1.2rem 1.5rem;
+
+    display: inline-block;
+
+    border: 2px solid var(--C-Rosa);
+    border-radius: 3rem;
+
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .5s;
+
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, .7);
+
+    color: var(--C-Blanco);
+    background-color: var(--C-Rosa);
+}
+
+/*--------- Sección 5 PORTFOLIO -------------*/
+/*-----------------------------------------*/
+#portfolio {
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, .8);
+
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('/images/fondoSobreMi.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#portfolio .portfolioContenedor {
+    max-width: 1100px;
+    padding: 4rem 0;
+    margin: 0 auto;
+}
+
+#portfolio .tituloPortfolio {
+    padding: 2rem 1rem;
+
+    font-size: 3rem;
+    font-weight: 400;
+
+    text-align: center;
+
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: .3rem;
+
+    color: var(--C-Rosa);
+}
+
+#portfolio .fila {
+    margin: 5rem 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#portfolio .fila .proyecto {
+    max-width: 450px;
+    min-height: 250px;
+    margin: 0 1rem;
+
+    position: relative;
+    overflow: hidden;
+
+    border-radius: .5rem;
+    border: 1px solid var(--C-Negro);
+}
+
+#portfolio .fila .proyecto img {
+    width: 100%;
+    height: 100%;
+
+    filter: grayscale(.9);
+    transition: .5s;
+}
+
+#portfolio .fila .proyecto:hover img {
+    filter: grayscale(0);
+}
+
+#portfolio .fila .proyecto .info {
+    width: 100%;
+    padding: .5rem 1rem;
+
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+
+    opacity: 0;
+    transition: .5s;
+
+    color: var(--C-Rosa);
+    background-color: rgba(0, 0, 0, .8);
+}
+
+#portfolio .fila .proyecto:hover .info {
+    opacity: 1;
+}
+
+#portfolio .fila .proyecto .info h4 a {
+    color: var(--C-Rosa);
+}
+
+#portfolio .fila .proyecto .info h4 a {
+    cursor: pointer;
+}
+
+/*--------- Sección 6 FOOTER -------------*/
+/*-----------------------------------------*/
+footer {
+    padding: 3rem;
+
+    box-shadow: 0 0 12px 2px rgba(255, 255, 255, .8);
+
+    color: var(--C-Blanco);
+    background-color: var(--C-Negro);
+}
+
+footer .footerContenedor {
+    width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.1rem;
+}
+
+footer .footerContenedor p {
+    margin-right: 2rem;
+}
+
+footer .footerContenedor .linkLinkedin {
+    margin-right: 1rem;
+}
+
+footer .footerContenedor a {
+    padding: .3rem .5rem;
+
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 1.5rem;
+    border: 2px solid var(--C-Rosa);
+
+    color: var(--C-Rosa);
+}
+
+/*--------- RESPONSIVE -------------*/
+/*-----------------------------------*/
+
+@media screen and (max-width: 800px) {
+    header .headerContain {
+        justify-content: space-around;
+    }
+
+    header .headerContain nav {
+        display: none;
+    }
+
+    header .headerContain nav.response {
+        width: 100%;
+        padding: .5rem 0;
+
+        display: flex;
+        justify-content: space-around;
+
+        position: absolute;
+        top: 3.8rem;
+        left: 0;
+
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+    header .headerContain nav.response a {
+        padding: .5rem;
+    }
+
+    .oculto {
+        display: block;
+    }
+
+    /* INICIO  */
+    #inicio .presentacion h2 {
+        font-size: 2.5rem;
+    }
+
+    /* SOBRE MI  */
+    #sobreMi {
+        height: auto;
+        padding: 7.5rem 3rem;
+
+        align-items: center;
+    }
+
+    #sobreMi .fotoContain {
+        max-width: 300px;
+        margin-right: 2rem;
+    }
+
+    #sobreMi .sobreMi {
+        margin: 0;
+    }
+
+    #sobreMi .sobreMi p {
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+    }
+
+    /* SERVICIOS  */
+    #servicios {
+        padding: 4rem 0;
+    }
+
+    #servicios .tituloServicios {
+        margin-bottom: 3rem;
+    }
+
+    #servicios .fila {
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #servicios .fila .servicio {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    /* FORTALEZAS  */
+    #fortalezas {
+        padding: 4rem 1rem;
+    }
+
+    #fortalezas .contenedorFortalezas {
+        margin: 2rem auto 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #fortalezas .contenedorFortalezas .fortalezas {
+        width: 250px;
+        margin: 2rem auto;
+        padding: 1.2rem 1.5rem;
+
+        text-align: center;
+    }
+
+    /* PORFOLIO  */
+    #portfolio {
+        padding: 1rem;
+    }
+
+    #portfolio .fila {
+        margin: 2.5rem auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+
+    #portfolio .fila .proyecto {
+        margin: 0 auto;
+    }
+
+    /* FOOTER  */
+    footer {
+        padding: 2rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: var(--C-GrisClaro);
+        background-color: var(--C-Negro);
+    }
+
+    footer .footerContenedor {
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.2rem;
+
+        text-align: center;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,147 @@
+/* GENERAL RULES  */
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+/* VARIABLES  */
+:root {
+    --C-DarkSeaGreen: rgba(125, 178, 144);
+    --C-PoliceBlue: rgba(36, 76, 102);
+    --C-White: white;
+    --C-Black: black;
+    --C-DarkBlue: rgb(21, 23, 60);
+    --C-Red: rgb(230, 57, 74);
+    --C-RedLight: rgb(230, 87, 102);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh;
+    background: rgb(11, 62, 180);
+    background: linear-gradient(354deg, #001C30, var(--C-PoliceBlue));
+}
+
+/*-------- - Header*/
+header {
+    padding-top: 2.5rem;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Borel', cursive;
+    font-size: 4rem;
+    text-decoration: underline;
+
+    color: var(--C-DarkSeaGreen);
+}
+/* MAIN RULES  */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------- CALCULADORA CONTAIN  */
+.calculadora {
+    width: 400px;
+    max-width: 100%;
+
+    background-color: var(--C-DarkBlue);
+
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ------------- Display --------------- */
+.pantalla {
+    width: 100%;
+    height: 70px;
+    color: var(--C-Black);
+    background: var(--C-DarkSeaGreen);
+
+    text-align: right;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    overflow: auto
+}
+
+/* -------------- BOTONES */
+.btn {
+    width: 70px;
+    height: 55px;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--C-DarkBlue);
+    color: var(--C-White);
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px var(--C-Black);
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: var(--C-DarkSeaGreen);
+    transition: 0.4s;
+}
+
+.filas {
+    display: flex;
+    gap: 12px;
+}
+
+.specialFila {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuartaFila {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+#cero {
+    width: 152px;
+}
+
+#igual {
+    width: 100px;
+    height: 120px;
+    background-color: var(--C-Red);
+}
+
+#igual:hover {
+    background-color: var(--C-RedLight);
+}
+
+/* MSG ERROR */
+.msgAlert {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}

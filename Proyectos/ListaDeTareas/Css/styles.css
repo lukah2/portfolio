@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fFamily-Raleway);
+}
+
+/* VARIABLES */
+
+:root {
+    /* FONT FAMILY */
+    --fFamily-Raleway: 'Raleway', sans-serif;
+    --fFamily-EduSA: 'Edu SA Beginner', cursive;
+
+    /* COLORES  */
+    --C-PoliceBlue: rgba(36, 76, 102);
+    --C-Red: rgb(199, 21, 62);
+    --C-RedLight: rgb(245, 32, 32);
+    --C-White: white;
+    --C-Black: black;
+    --C-CadetGreyLight: rgb(202, 231, 248);
+    --C-PoliceBlueAlpha: rgba(36, 76, 102, 0.842);
+}
+
+/* REGLAS MAIN  */
+main {
+    width: 100vw;
+    height: 100vh;
+
+    padding: 3rem 0px 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    font-family: var(--fFamily-Raleway);
+
+    background-color: var(--C-PoliceBlue);
+}
+
+#listContain {
+    width: 700px;
+
+    padding: 2.2rem 4rem;
+    
+    border-radius: 25px;
+    border:none;
+    box-shadow: 0px 0px 12px var(--C-Black);
+
+    background-color: var(--C-CadetGreyLight);
+}
+
+#listContain h1 {
+    min-height: 50px;
+    margin-bottom: 2rem;
+
+    text-align: center;
+
+    font-family: var(--fFamily-EduSA);
+    font-size: 4.1rem;
+    
+    color: var(--C-PoliceBlue);
+}
+
+#buscador {
+    width: 600px;
+
+    padding-top: 1rem;
+    margin: auto;
+
+    min-height: 200px;
+}
+
+form {
+    width: 100%;
+    margin-bottom: 3rem;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form input {
+    width: 100%;
+    padding: 15px 10px;
+
+    font-size: 1rem;
+
+    border: none;
+    outline: none;
+    border-radius: 10px 0px 0px 10px;
+}
+
+form input:focus {
+    box-shadow: 0px 2px 9px var(--C-Black);
+}
+
+.inputContain {
+    width: 100%;
+
+    display: flex;
+}
+
+.addBtn {
+    padding: 5px 15px;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    outline: none;
+
+    background-color: var(--C-PoliceBlue);
+    color: var(--C-White);
+}
+
+.addBtn:hover {
+    cursor: pointer;
+    background-color: var(--C-PoliceBlueAlpha);
+}
+
+ul {
+    width: 100%;
+    padding: 0px;
+}
+
+.taskContain {
+    width: 100%;
+    margin-bottom: 1.3rem;
+
+    display: flex;
+
+    list-style: none;
+    border-radius: 10px;
+}
+
+.task {
+    width: 100%;
+    padding: 12px;
+
+    font-weight: 500;
+    border-radius: 10px 0px 0px 10px;
+
+    color: var(--C-White);
+    background-color: var(--C-PoliceBlueAlpha);
+}
+
+.deleteBtn {
+    width: 8%;
+    padding: 0px 5px;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    outline: none;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+
+    color: var(--C-White);
+    background-color: var(--C-Red);
+}
+
+.deleteBtn:hover {
+    cursor: pointer;
+    background-color: var(--C-RedLight);
+}
+
+.msgTask {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.msgError {
+    width: 100%;
+
+    padding-top: 1rem;
+
+    display: none;
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: var(--C-RedLight);
+}
